@@ -52,6 +52,6 @@ for context in range(2) # there are 3 contexts, each with 18 questions/trials
     shuffle (context) # randomize contexts order
     
     for trial in trials
-    response_judgment = key pressed
-    response_reasoning = words input
-    save(response_judgment, response_reasoning, trial)
+        response_judgment = key pressed
+        response_reasoning = words input
+        save(response_judgment, response_reasoning, trial)
