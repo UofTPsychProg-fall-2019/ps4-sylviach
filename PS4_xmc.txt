@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 11 11:50:26 2019
+
+@author: Xiao Min chang
+"""
+
+
+### Experiment description ###
+
+Studies within the field of developmental psychology have extensively investigated children’s moral development,
+typically looking at how they judge and reason about prototypical moral transgressions such as hitting and 
+teasing under different contexts (e.g.,Helwig, Zalozo, & Wilson, 2001; Piaget, 1948; Smetana, Jambon, & Ball, 2016;
+Turiel, 2006; Wainryb, 2006). These studies have found that children from a wide range of cultural backgrounds 
+consistently judge moral transgressions as wrong, unacceptable, and deserving of punishment. However, less is 
+known about what children, or an authority, would/should do next following the transgression. What kind of 
+punishment is due to the wrongdoers?  Based on the role of the punisher, the punishment could be fulfilled by 
+the victim as personal revenge, or by an authority which is generally viewed as legitimate punishment. Based on 
+the focus of the punishment, it could be retributive (perpetrator-oriented), or restorative (victim-oriented). 
+This current study seeks to examine how children perceive and evaluate different forms of punishment against 
+prototypical moral transgressors.Two hypothetical story vignettes will be used, one describing a scenario of 
+physical harm (i.e., a child pushes another off the seesaw; violent transgression) and the other describing 
+personal property violation (i.e., a child takes away another child’s desert without asking; non-violent 
+transgression). The context of the transgression will vary, being either single-time intentional, repeated 
+intentional, or accidental. Next, participants will be presented four possible punishments (personal revenge, 
+retributive punishment that makes the transgressor suffer, restorative punishment that benefits the victim, and 
+restorative apology), respectively. After each proposed punishment, a series of questions will be asked to examine 
+participants’ judgment and reasoning from different angles, e.g., right or wrong, fair or unfair, effective or 
+ineffective.
+
+
+==================================================================================================================
+
+
+### pseudocode ### 
+
+vig_physical = read_directory('physical harm/*.txt') 
+vig_property = read_directory('property violation/*.txt')
+
+subject = input() # input subject ID
+
+if is_odd(subject) 
+    vignette = ['vig_physical']
+    
+else
+    vignette = ['vig_property'] # counterbalance vignettes presentation
+   
+
+for context in range(2) # there are 3 contexts, each with 18 questions/trials
+    cont_order1 = ['intentional + accidental']
+    cont_order2 = ['accidental + intentionl']
+    shuffle (context) # randomize contexts order
+    
+    for trial in trials
+    response_judgment = key pressed
+    response_reasoning = words input
+    save(response_judgment, response_reasoning, trial)
